@@ -8,7 +8,7 @@
 		<version>3.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>com.example.clienteapp</groupId>
 	<artifactId>iron</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>iron</name>
@@ -60,6 +60,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.4.5</version>
+				<configuration>
+					<mainClass>com.example.clienteapp.ClienteappApplication</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

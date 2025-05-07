@@ -1,8 +1,10 @@
-package com.example.model;
-
+package com.example.clienteapp.model;
 import jakarta.persistence.*;
 
+@Entity
+@Table(name = "cad_cliente")
 public class Cliente {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -12,6 +14,11 @@ public class Cliente {
 
     @Column(nullable = false, unique = true)
     private String email;
+
+
+
+    // Getters e setters
+
 
     public Long getId() {
         return id;
